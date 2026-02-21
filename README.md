@@ -53,6 +53,12 @@ npm run dev
 
 Open the app at `http://127.0.0.1:8000`.
 
+## Admin Login
+
+1. Open `http://127.0.0.1:8000/login`
+2. Email: `admin@dynacomp.test`
+3. Password: `admin123`
+
 ## Short Architecture
 
 - **Framework:** Laravel (Blade + Tailwind via Vite)
