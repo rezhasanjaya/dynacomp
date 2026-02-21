@@ -10,7 +10,7 @@
 ## Clone and Setup
 
 ```bash
-git clone <your-repo-url> dynacomp
+git clone https://github.com/rezhasanjaya/dynacomp.git
 cd dynacomp
 cp .env.example .env
 composer install
