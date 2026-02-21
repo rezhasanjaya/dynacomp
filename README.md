@@ -52,3 +52,25 @@ npm run dev
 ```
 
 Open the app at `http://127.0.0.1:8000`.
+
+## Short Architecture
+
+- **Framework:** Laravel (Blade + Tailwind via Vite)
+- **Database:** MySQL (Eloquent ORM)
+- **Public Pages:** `resources/views/landing/*`
+- **Admin Pages:** `resources/views/logged/*` with sidebar layout
+- **Key Models:** `Project`, `ProjectCategory`, `Article`, `ArticleCategory`, `ContactMessage`
+- **File Uploads:** stored in `storage/app/public`, exposed via `php artisan storage:link`
+- **API:** `/api/articles` and `/api/projects` (filter + include category + pagination)
+
+## API Examples
+
+Articles (filter + include + pagination):
+```
+/api/articles?filter[category]=Design&include=category&page=1&per_page=10
+```
+
+Projects (filter category/year + include):
+```
+/api/projects?filter[category]=Company%20Profile&filter[year]=2026&include=category
+```
