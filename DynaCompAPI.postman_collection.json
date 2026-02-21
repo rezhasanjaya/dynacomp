@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "d5c7d961-4512-4d2d-911c-48ed8cc42089",
+    "name": "DynaCompAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32673687",
+    "_collection_link": "https://go.postman.co/collection/32673687-d5c7d961-4512-4d2d-911c-48ed8cc42089?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "articles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base}}/api/articles?include=category",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "articles"
+          ],
+          "query": [
+            {
+              "key": "include",
+              "value": "category"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "project",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base}}/api/projects?include=category",
+          "host": [
+            "{{base}}"
+          ],
+          "path": [
+            "api",
+            "projects"
+          ],
+          "query": [
+            {
+              "key": "include",
+              "value": "category"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base",
+      "value": ""
+    }
+  ]
+}
